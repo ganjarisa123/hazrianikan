@@ -1,0 +1,100 @@
+#!/bin/bash
+
+ulang="MENU"
+
+while [ $ulang = "MENU" ]
+
+do
+
+    echo "SILAKAN DIPILUH MENU NGAV:"
+
+    echo "(1).STABILKAN JARINGAN"
+
+    echo "(2).EXIT"
+
+  read -p "Pilih menu~>:" pil ;
+
+    if [ $pil = "1" ]
+
+    then
+
+      echo "WAIT LAGI PROSES ..."
+
+      cd #HOME
+
+      pkg update && pkg upgrade -y
+
+      ping -s 1000 8.8.8.8
+
+      echo "Proses dihentikan..."
+
+    elif [ $pil = "2" ]
+
+    then
+
+      echo "LAGI KELUAR NGAB..."
+
+      sleep 2
+
+      exit
+
+    else
+
+      echo "MODULE SALAH BEGO"
+
+      sleep 2
+
+      echo $ulang
+
+    fi
+
+done
+
+
+
+
+
+
+
+    
+
+    
+
+
+
+
+
+
+
+    
+
+      
+
+      
+
+      
+
+     
+
+      
+
+    
+
+  
+
+   
+
+      
+
+      
+
+    
+
+      
+
+
+
+
+
+    
+
